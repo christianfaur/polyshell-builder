@@ -1,0 +1,24 @@
+schema_version = "1.0.0"
+
+id = "polyshell_builder"
+version = "1.0.0"
+name = "Polyshell Builder"
+tagline = "Turn a low-poly mesh into printable panels that glue together"
+maintainer = "Christian Faur <faurc@denison.edu>"
+type = "add-on"
+
+tags = ["3D View", "Mesh", "Import-Export"]
+blender_version_min = "4.5.0"
+license = ["SPDX:GPL-3.0-or-later"]
+copyright = ["2026 Christian Faur"]
+
+[permissions]
+files = "Write STL print plates, a PDF assembly guide and a build report"
+
+[build]
+paths_exclude_pattern = [
+  "__pycache__/",
+  "/.git/",
+  "*.zip",
+  ".DS_Store",
+]
